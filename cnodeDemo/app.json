@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/topics/topics",      
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/create/create",
+    "pages/message/message",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "backgroundColor":"#fff",
+    "navigationBarBackgroundColor":"#444",
+    "navigationBarTitleText":"CNODE",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar":{
+    "color":"#272636",
+    "selectedColor":"#80bd01",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list":[
+      {
+      "pagePath":"pages/topics/topics",
+      "iconPath": "image/icon_component.png",
+      "selectedIconPath": "image/icon_component_HL.png",
+      "text":"首页"
+    },{
+      "pagePath":"pages/create/create",
+      "iconPath": "image/icon_component.png",
+      "selectedIconPath": "image/icon_component_HL.png",
+      "text":"发表"
+    },{
+      "pagePath":"pages/logs/logs",
+      "iconPath": "image/icon_component.png",
+      "selectedIconPath": "image/icon_component_HL.png",
+      "text":"消息"
+    },{
+      "pagePath":"pages/index/index",
+      "iconPath": "image/icon_component.png",
+      "selectedIconPath": "image/icon_component_HL.png",
+      "text":"我的"
+    }]
+  }
+}

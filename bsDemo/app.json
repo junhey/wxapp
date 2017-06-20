@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/audio/audio",
+    "pages/image/img",
+    "pages/vidio/vidio",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "百思不得姐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "#DDDDDD",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "段子",
+        "iconPath": "images/duanzi_unselected.png",
+        "selectedIconPath": "images/duanzi_selected.png"
+      },
+      {
+        "pagePath": "pages/image/img",
+        "text": "图片",
+        "iconPath": "images/image_unselected.png",
+        "selectedIconPath": "images/image_selected.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "声音",
+        "iconPath": "images/audio_unselected.png",
+        "selectedIconPath": "images/audio_selected.png"
+      },
+      {
+        "pagePath": "pages/vidio/vidio",
+        "text": "视频",
+        "iconPath": "images/vidio_unselected.png",
+        "selectedIconPath": "images/vidio_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 120000
+  },
+  "debug": true
+}

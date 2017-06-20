@@ -1,0 +1,21 @@
+<!--用户user组件 -->
+<template name="user">
+    <view class="user-template">
+      <view class="page-hd">
+        <image class="user-logo" mode="scaleToFill" src="{{userData.avatar_url}}"></image>
+        <view class="user-name">{{userData.loginname}}</view>
+      </view>
+      <view class="page-bd">
+          <view class="user-desc">
+              <view class="join">
+                <text class="desc-tit">加入时间</text>
+                <text>{{userData.create_at}}</text>
+              </view>
+              <view class="score">
+                <text class="desc-tit">积分</text>
+                <text>{{userData.score}}</text>
+              </view>
+          </view>
+      </view>
+    </view>
+</template>

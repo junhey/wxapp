@@ -1,0 +1,61 @@
+/**app.wxss**/
+.container {
+  padding: 15rpx; 
+  margin-top: 15rpx; 
+  margin-bottom: 15rpx;
+  background-color: white;
+} 
+.userAvator{
+  border-radius: 50%;
+  width:64rpx;
+  height: 64rpx;
+}
+/*整个item*/
+.item{
+  margin-left: 2rpx;
+  margin-right: 2rpx;
+  margin-top: 10rpx; 
+  /*border: 1rpx solid #CCCCCC;*/
+  /*background-color: #EEE;*/
+  padding: 8rpx;
+  /*border-radius: 3%;*/
+}
+/*style="display: flex;  flex-direction: row;  align-items: center;  margin-bottom: 18rpx;"*/
+/*item头部的样式*/
+.itemHeader{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+/*style=" margin-left: 15rpx;  display: flex;  flex-direction: column;"*/
+/*item头部的右边*/
+.headerRight{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+/*头部的名字*/
+.headerName{
+  font-size: 30rpx;
+}
+/*头部的时间*/
+.headerTime{
+  font-size: 25rpx;
+  color: gray;
+}
+/*item底部样式*/
+.itemFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+/*底部图片样式*/
+.footerImg{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,64 @@
+<!--pages/user/user.wxml-->
+<import src="../common/user.wxml"/>
+
+<view class="page user">
+	<template is="user" data="{{ userData }}"/>
+	<view class="user-nav">
+		<view data-index="0" class="{{activeIndex==0 ? 'active' : ''}}" catchtap="onTapTag">
+			最近回复
+		</view>
+		<view data-index="1" class="{{activeIndex==1 ? 'active' : ''}}" catchtap="onTapTag">
+			最新发布
+		</view>
+	</view>
+	<view class="user-content">
+		<scroll-view class="scroll-posts-list" wx-if="{{activeIndex==0}}"  scroll-y="true" style="height:100%"  bindscrolltolower="lower">
+		  <view class="postslist">
+		    <block wx:for="{{userData.recent_replies}}"  wx:key="">
+		      <view class="posts-list">
+		        <navigator url="/pages/detail/detail?id={{item.id}}">
+		          <view class="posts-list-info" index="{{index}}">
+		              <image class="userimg" src="{{item.author.avatar_url}}" />
+		              <view class="item-box">
+		                <view class="userinfo">
+		                  <text class="username">{{item.author.loginname}}</text>
+		                  <text class="time">{{item.last_reply_at}}</text>
+		                </view>
+		                <view class="posts-title">
+		                  <text>{{item.title}}</text>
+		                </view>
+		              </view>
+		          </view>
+		      </navigator>
+		      </view>
+		    </block>
+		  </view>
+		</scroll-view>
+		<scroll-view class="scroll-posts-list" wx-if="{{activeIndex==1}}" scroll-y="true" style="height:100%"  bindscrolltolower="lower">
+		  <view class="postslist">
+		    <block wx:for="{{userData.recent_topics}}"  wx:key="">
+		      <view class="posts-list">
+		        <navigator url="/pages/detail/detail?id={{item.id}}">
+		          <view class="posts-list-info" index="{{index}}">
+		              <image class="userimg" src="{{item.author.avatar_url}}" />
+		              <view class="item-box">
+		                <view class="userinfo">
+		                  <text class="username">{{item.author.loginname}}</text>
+		                  <text class="time">{{item.last_reply_at}}</text>
+		                </view>
+		                <view class="posts-title">
+		                  <text>{{item.title}}</text>
+		                </view>
+		              </view>
+		          </view>
+		      </navigator>
+		      </view>
+		    </block>
+		  </view>
+		</scroll-view>
+	</view>
+	<loading class="loading" hidden="{{hidden}}">
+		  <text class="loading-font">加载中...</text>
+	</loading>
+</view>
+

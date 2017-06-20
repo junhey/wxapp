@@ -1,0 +1,27 @@
+<!--logs.wxml-->
+<view class="container message-list">
+  <text wx-if="{{cnodeStatus==true}}" class="login-text" bindtap="login">你还未登录，请点击登录</text>
+  <scroll-view wx-if="{{cnodeStatus==false}}" class="scroll-posts-list"  scroll-y="true" style="height:100%"  bindscrolltolower="lower">
+	  <view class="postslist">
+	    <block wx:for="{{messageData.has_read_messages}}"  wx:key="">
+	      <view class="posts-list">
+	        <navigator url="/pages/detail/detail?id={{item.id}}">
+	          <view class="posts-list-info" index="{{index}}">
+	              <image class="userimg" src="{{item.author.avatar_url}}" />
+	              <view class="item-box">
+	                <view class="userinfo">
+	                  <text class="username">{{item.author.loginname}}</text>
+	                  <text class="time">{{item.last_reply_at}}</text>
+	                </view>
+	                <view class="posts-title">
+	                  <text>{{item.title}}</text>
+	                </view>
+	              </view>
+	          </view>
+	          
+	      </navigator>
+	      </view>
+	    </block>
+	  </view>
+	</scroll-view>
+</view>

@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view class="container">
+ 	<view class="login" wx-if="{{cnodeStatus==true}}" >你还未登录，请点击登录</view>
+ 	<form wx-if="{{cnodeStatus==false}}" bindsubmit="send" >
+ 		<view class="topics_type item">
+		 	<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}" wx:key="">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+		 </view>
+ 		<view class="topics_title item">
+		 	<input type="text" name="title" placeholder="标题字数在10字以上" />
+		 </view>
+ 		<view class="topics_content item">
+		 	<textarea name="content" placeholder="内容字数在30字以上"/>
+		 </view>
+ 		<view class="topics_btn">
+		 	<button type="primary" form-type="submit">发表</button>
+		 </view>
+ 	</form>
+</view>

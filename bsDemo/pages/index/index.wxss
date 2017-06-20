@@ -1,0 +1,5 @@
+/*item的内容样式*/
+.itemContent{
+  color: black;
+  font-size: 35rpx;
+}
