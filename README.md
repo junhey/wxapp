@@ -67,12 +67,12 @@ Page({
 
 #### 组件
 
-基本：view,text
-表单：button,input,radio,slider
-媒体：image,video,audio,canvas
-模态：action-sheet,modal,toast,loading
-容器：swiper,scroller
-导航：navigator,tabbar
+- 基本：view,text
+- 表单：button,input,radio,slider
+- 媒体：image,video,audio,canvas
+- 模态：action-sheet,modal,toast,loading
+- 容器：swiper,scroller
+- 导航：navigator,tabbar
 
 
 
@@ -106,9 +106,6 @@ https://github.com/dunizb/wxapp-sCalc
 - 豆瓣图书 
 http://www.jianshu.com/p/c35084200470
 
-- 移动商城 
-https://github.com/liuxuanqiang/wechat-weapp-mall
-
 - 天气 
 http://swiftcafe.io/2016/10/03/wx-weather-app/
 https://github.com/liuyugang123/tianqi
@@ -123,13 +120,6 @@ https://blog.zhengxiaowai.cc/post/weapp-demo.html
 - 知乎日报 
 https://github.com/liuyugang123/zhihuAPP
 http://www.apkbus.com/forum.php?mod=viewthread&tid=268626&extra=page%3D1%26filter%3Dsortid%26sortid%3D12
-
-- 名片
-https://github.com/liuyugang123/CardAPP
-
-- 聊天室
-https://github.com/liuyugang123/chatAPP
-
 
 
 
