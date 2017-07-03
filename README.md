@@ -116,7 +116,6 @@ http://www.jianshu.com/p/c35084200470
 
 - 天气 
 http://swiftcafe.io/2016/10/03/wx-weather-app/
-https://github.com/liuyugang123/tianqi
 https://github.com/liuyugang123/Weather
 
 - 空气质量查询 
@@ -129,5 +128,9 @@ https://blog.zhengxiaowai.cc/post/weapp-demo.html
 https://github.com/liuyugang123/zhihuAPP
 http://www.apkbus.com/forum.php?mod=viewthread&tid=268626&extra=page%3D1%26filter%3Dsortid%26sortid%3D12
 
+### 更多
 
+持续踩坑中...
+
+后续会进行不断更新，订阅请点watch，收藏请点star，欢迎开[issues](https://github.com/junhey/wxapp/issues/new)来提问
 
