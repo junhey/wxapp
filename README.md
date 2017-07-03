@@ -1,5 +1,7 @@
-# wxapp
-微信小程序知识总结及案例集锦
+# 微信小程序知识总结及案例集锦
+>微信小程序的发展会和微信公众号一样，在某个时间点爆发
+
+### 学习路径
 
 1. 微信小程序最好的教程肯定是官方的文档啦，点击这里直达 *[微信官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)*
 
@@ -12,7 +14,7 @@
 5. 入门之后就是看其他项目的实现了，这里会附上案例集锦，附上一些github的案例。
 
 
-## 知识总结
+### 知识总结
 
 > tip：看到了另一份[W3CSchool整理的文档](http://www.w3cschool.cn/weixinapp/)，可以结合官方文档一起看
 
@@ -74,9 +76,15 @@ Page({
 - 容器：swiper,scroller
 - 导航：navigator,tabbar
 
+### 踩坑记录
 
+- 基本的防踩坑[Q&A](https://mp.weixin.qq.com/debug/wxadoc/dev/qa.html)
 
-## 案例集锦
+- 最佳防踩坑的方式就是看这个[微信小程序常见FAQ](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=2fcdb7794d48c59f7624f53e94d0ae22)
+
+- 好友坑过的[开发者社区已解决问题](https://developers.weixin.qq.com/home?tab=1&labels=&lang=zh_CN&token=)
+
+### 案例集锦
 
 > tip：从案例里可以看到很多其他小程序实现的方式，多多看代码
 
@@ -86,7 +94,7 @@ https://mp.weixin.qq.com/debug/wxadoc/dev/demo.html
 - 官方quick start
 https://github.com/junhey/wxapp/tree/master/quickStart
 
-- cnodejs
+- *cnodejs* 推荐通过cnodejs的api来实践开发小程序
 https://github.com/junhey/wxapp-cnode
 
 - v2ex
