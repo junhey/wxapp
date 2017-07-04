@@ -76,13 +76,72 @@ Page({
 - 容器：swiper,scroller
 - 导航：navigator,tabbar
 
-### 踩坑记录
+### 小程序开发踩坑记录
 
 - 基本的防踩坑[Q&A](https://mp.weixin.qq.com/debug/wxadoc/dev/qa.html)
 
 - 最佳防踩坑的方式就是看这个[微信小程序常见FAQ](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=2fcdb7794d48c59f7624f53e94d0ae22)
 
 - 好友坑过的[开发者社区已解决问题](https://developers.weixin.qq.com/home?tab=1&labels=&lang=zh_CN&token=)
+
+
+1. 小程序页面空白
+    - css兼容性问webkit内核
+    - lineShopId长度太长，字符转数字Number
+    - post请求参数加上encodeURIComponent解析字符串
+2. header要设置正确
+    - get "content-type":'application/json'
+    - post "content-type":'application/x-www-form-urlencoded'
+    - content-Type:application/x-www-form-urlencoded,application/json
+3. bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡
+4. image背景图片地址必须是url或者base64/本地资源无法通过 css 获取 可以使用网络图片，或者 base64，或者使用 <image/> 标签
+5. 使用竖向滚动时，需要给scroll-view一个固定高度，通过 WXSS 设置 height。如果scroll-view高度设置为100%,则不能触发上拉刷新和下拉加载事件......
+6. App() 小程序注册入口，全局唯一。App()用来注册一个小程序，全局只有一个，全局的数据也可以放到这里面来操作。
+    ```
+    // 注册微信小程序，全局只有一个
+    let appConfig = {
+        // 小程序生命周期的各个阶段
+        onLaunch: function(){},
+        onShow: function(){},
+        onHide: function(){},
+        onError: function(){},
+    
+        // 自定义函数或者属性
+        ...
+    };
+    App(appConfig);
+    
+    // 在别的地方可以获取这个全局唯一的小程序实例
+    const app = getApp();
+    ```
+    小程序并没有提供销毁的方式，所以只有当小程序进入后台一定时间、或者系统资源占用过高的时候，才会被真正的销毁。
+7. Page() 页面注册入口。Page()用来注册一个页面，维护该页面的生命周期以及数据。
+```
+// 注册微信小程序，全局只有一个
+let pageConfig = {
+    data: {},
+    // 页面生命周期的各个阶段
+    onLoad: function(){},
+    onShow: function(){},
+    onReady: function(){},
+    onHide: function(){},
+    onUnload: function(){},
+    onPullDownRefresh: function(){},
+    onReachBottom: function(){},
+    onShareAppMessage: function(){},
+
+    // 自定义函数或者属性
+    ...
+};
+Page(pageConfig);
+
+// 获取页面堆栈，表示历史访问过的页面，最后一个元素为当前页面
+const page = getCurrentPages();
+```
+8. {{}} 不能执行方法，只能处理简单的运算如 “+ - * /”，比如遇到遍历list，每个item的金额需要格式化，只能在js里预先格式化好再setData一遍( ╯□╰ )
+9. 数字键盘用 type="digit"
+10. 禁止页面下拉需要设置 "disableScroll": true 
+
 
 ### 案例集锦
 
