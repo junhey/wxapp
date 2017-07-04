@@ -9,9 +9,9 @@
 
 3. 新建一个quick start项目，了解代码结构，这里附上整个quick start代码。
 
-4. 然后就拿个顺手的api练练手，这里附上cnode代码，跟着做完差不多就算入门了。
+4. 然后就拿个顺手的api练练手，这里附上[cnode代码](https://github.com/junhey/wxapp/tree/master/cnodeDemo)，跟着做完差不多就算入门了。
 
-5. 入门之后就是看其他项目的实现了，这里会附上案例集锦，附上一些github的案例。
+5. 入门之后就是看其他项目的实现了，这里会附上[案例集锦](https://github.com/junhey/wxapp#案例集锦)，一些github的案例。
 
 
 ### 知识总结
