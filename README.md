@@ -7,7 +7,7 @@
 
 2. 认真跟着文档看一遍，相信有vue前端经验的看下应该就能上手了，然后安装 *[微信小程序开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)*
 
-3. 新建一个quick start项目，了解代码结构，这里附上整个quick start代码。
+3. 新建一个quick start项目，了解代码结构，这里附上整个[quick start代码](https://github.com/junhey/wxapp/tree/master/quickStart)。
 
 4. 然后就拿个顺手的api练练手，这里附上[cnode代码](https://github.com/junhey/wxapp/tree/master/cnodeDemo)，跟着做完差不多就算入门了。
 
@@ -117,29 +117,30 @@ Page({
     const app = getApp();
     ```
     小程序并没有提供销毁的方式，所以只有当小程序进入后台一定时间、或者系统资源占用过高的时候，才会被真正的销毁。
+
 7. Page() 页面注册入口。Page()用来注册一个页面，维护该页面的生命周期以及数据。
-```
-// 注册微信小程序，全局只有一个
-let pageConfig = {
-    data: {},
-    // 页面生命周期的各个阶段
-    onLoad: function(){},
-    onShow: function(){},
-    onReady: function(){},
-    onHide: function(){},
-    onUnload: function(){},
-    onPullDownRefresh: function(){},
-    onReachBottom: function(){},
-    onShareAppMessage: function(){},
+	```
+	// 注册微信小程序，全局只有一个
+	let pageConfig = {
+		data: {},
+		// 页面生命周期的各个阶段
+		onLoad: function(){},
+		onShow: function(){},
+		onReady: function(){},
+		onHide: function(){},
+		onUnload: function(){},
+		onPullDownRefresh: function(){},
+		onReachBottom: function(){},
+		onShareAppMessage: function(){},
 
-    // 自定义函数或者属性
-    ...
-};
-Page(pageConfig);
+		// 自定义函数或者属性
+		...
+	};
+	Page(pageConfig);
 
-// 获取页面堆栈，表示历史访问过的页面，最后一个元素为当前页面
-const page = getCurrentPages();
-```
+	// 获取页面堆栈，表示历史访问过的页面，最后一个元素为当前页面
+	const page = getCurrentPages();
+	```
 8. {{}} 不能执行方法，只能处理简单的运算如 “+ - * /”，比如遇到遍历list，每个item的金额需要格式化，只能在js里预先格式化好再setData一遍( ╯□╰ )
 9. 数字键盘用 type="digit"
 10. 禁止页面下拉需要设置 "disableScroll": true 
@@ -178,7 +179,6 @@ http://www.jianshu.com/p/c35084200470
 
 - 天气 ★★★
 http://swiftcafe.io/2016/10/03/wx-weather-app/
-https://github.com/liuyugang123/Weather
 
 - 空气质量查询 ★★★
 http://blog.csdn.net/yulianlin/article/details/52692066
@@ -188,7 +188,6 @@ https://blog.zhengxiaowai.cc/post/weapp-demo.html
 
 - 知乎日报 ★★★
 https://github.com/liuyugang123/zhihuAPP
-http://www.apkbus.com/forum.php?mod=viewthread&tid=268626&extra=page%3D1%26filter%3Dsortid%26sortid%3D12
 
 ### 更多
 
