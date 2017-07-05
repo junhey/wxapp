@@ -149,43 +149,44 @@ const page = getCurrentPages();
 
 > tip：从案例里可以看到很多其他小程序实现的方式，多多看代码
 
-- 官方demo
+- 官方demo★★★★★  官方demo可以看看布局啥的，实现啥的
 https://mp.weixin.qq.com/debug/wxadoc/dev/demo.html
 
-- 官方quick start
+- 官方quick start★★★★★  官方的小程序，可以自己改动看看效果
 https://github.com/junhey/wxapp/tree/master/quickStart
 
-- *cnodejs* 推荐通过cnodejs的api来实践开发小程序
+- *cnodejs* ★★★★ 自己做的第一款小程序，基本上覆盖小程序的基本操作，推荐通过cnodejs的api来实践开发小程序
 https://github.com/junhey/wxapp-cnode
 
-- v2ex
+- 石头剪刀布★★★★  腾讯云团队出品，里面有websocket的使用
+https://github.com/CFETeam/weapp-demo-websocket
+
+- v2ex ★★★
 https://github.com/liuyugang123/V2EX
 
-- 精简版百思不得姐
+- 精简版百思不得姐 ★★★
 https://github.com/shuncaigao/BS
-https://github.com/liuyugang123/BaisiSister
 
-- 电影推荐
+- 电影推荐 ★★★
 https://github.com/liuyugang123/movie
 
-
-- 计算器 
+- 计算器 ★★★
 https://github.com/dunizb/wxapp-sCalc
 
-- 豆瓣图书 
+- 豆瓣图书 ★★★
 http://www.jianshu.com/p/c35084200470
 
-- 天气 
+- 天气 ★★★
 http://swiftcafe.io/2016/10/03/wx-weather-app/
 https://github.com/liuyugang123/Weather
 
-- 空气质量查询 
+- 空气质量查询 ★★★
 http://blog.csdn.net/yulianlin/article/details/52692066
 
-- github客户端 
+- github客户端 ★★★
 https://blog.zhengxiaowai.cc/post/weapp-demo.html
 
-- 知乎日报 
+- 知乎日报 ★★★
 https://github.com/liuyugang123/zhihuAPP
 http://www.apkbus.com/forum.php?mod=viewthread&tid=268626&extra=page%3D1%26filter%3Dsortid%26sortid%3D12
 
