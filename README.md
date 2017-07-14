@@ -189,6 +189,12 @@ https://blog.zhengxiaowai.cc/post/weapp-demo.html
 - 知乎日报 ★★★
 https://github.com/liuyugang123/zhihuAPP
 
+- 区块链小程序 ★★★
+https://github.com/ghostjzf/xiaolian
+
+- 时间管理小程序 ★★★
+https://github.com/FatDong1/time-record
+
 ### 更多
 
 持续踩坑中...
