@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="tip" wx:if="{{tipflag}}">{{tip}}</view>
+    <form report-submit bindsubmit="bindSubmitTap">
+        <view class="info">
+            <view class="code">
+                <image src="{{integralQRCode}}" class="chaincode"></image>
+            </view>
+            <view class="infoAll">
+                <view class="txinfo">
+                    <text>{{tomobile}}</text>
+                </view>
+                <view class="chaincodeID">
+                    <text class="idInfo">{{chaincodeID}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="info">
+            <label>积分</label>
+            <input name="score" maxlength="10" type="number"/>
+        </view>
+        <view class="info">
+            <label>密码</label>
+            <input name="pw" maxlength="6" type="number" password/>
+        </view>
+        <view class="notice">
+            <text>交易实时 免手续费</text>
+        </view>
+        <button type="primary" formType="submit" plain>确定</button>
+    </form>
+
+    <!--loading-->
+   <loading hidden="{{hiddenLoading}}">正在加载</loading> 
+</view>

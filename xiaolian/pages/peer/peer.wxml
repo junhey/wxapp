@@ -1,0 +1,36 @@
+<view class="container">
+    <!--区块展示内容-->
+    <view class="blockContent" wx:if="{{isBlockShow}}">
+        <view class="title">
+            <text>区块</text>
+        </view>
+        <view class="block" wx:for="{{blocks}}" wx:key="stateHash">
+            <text class="blockIndex">{{height - index}}</text>
+            <text class="blockitem" bindtap="bindBlockTap" data-index="{{height - index}}">{{blocks[index]}}</text>
+            <image src="../../image/arrow.png" class="arrow"></image>
+        </view>
+    </view> 
+
+    <!--节点展示内容-->
+    <view class="nodeContent" wx:if="{{!isBlockShow}}">
+        <view class="title">
+            <text>节点</text>
+        </view>
+        <view class="vp" wx:for="{{peers}}" wx:key="pkiID">
+            <text class="vpIndex">vp{{index}}</text>
+            <text class="item">{{peers[index].pkiID}}</text>
+        </view>
+    </view>
+    
+    <!--底部导航-->
+    <view class="peerTabbar">
+        <!--区块-->
+        <view class="nav" style="background-color:{{BlockbgColor}};" bindtap="bindBlockNavTap">
+            <image src="../../image/blocks.png" class="navImg"></image>
+        </view>
+        <!--节点-->
+        <view class="nav" style="background-color:{{NodebgColor}};" bindtap="bindNodeNavTap">
+            <image src="../../image/node.png" class="navImg"></image>
+        </view>
+    </view>
+</view>

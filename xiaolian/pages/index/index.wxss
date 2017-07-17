@@ -1,0 +1,104 @@
+/**index.wxss**/
+.head {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #aaa;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+}
+
+.balance {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bae {
+  width:60%;
+  margin-left: 50rpx;
+  font-size: 40rpx;
+}
+
+.block {
+  width:70rpx;
+  height: 70rpx;
+  align-self: flex-end;
+  margin-bottom: 40rpx;
+  margin-right: 40rpx;
+}
+
+.title {
+  padding: 40rpx 40rpx 20rpx 40rpx;
+  font-size: 34rpx;
+}
+
+.card {
+  height: 220rpx;
+  border: 1px solid #aaa;
+  border-radius: 20rpx;
+  margin: 0rpx 30rpx 0rpx 30rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-color: green;
+}
+
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx 40rpx 40rpx 20rpx;
+  font-size: 35rpx;
+}
+
+.asset {
+  margin-top: 30rpx;
+}
+
+.chaincode {
+  width: 200rpx;
+  height: 200rpx;
+  align-self: flex-end;
+}
+
+.qrcode {
+  width:300rpx;
+  height: 96rpx;   
+  border-radius: 40rpx; 
+  margin-top: 45rpx;
+  opacity: 0.3;
+  vertical-align: middle;
+  background-color: forestgreen;
+}
+
+.bind {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: 100%;
+  font-size: 35rpx;
+  color: forestgreen;
+  line-height: 60rpx;
+}

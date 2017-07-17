@@ -1,0 +1,88 @@
+html{
+    background-color: #ddd;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 1px solid;
+    border-bottom-color: green;
+    height: 60rpx;
+    margin: 20rpx 40rpx 0rpx 45rpx;
+}
+
+.vp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30rpx;
+    margin: 20rpx 40rpx 20rpx 40rpx;
+    padding: 30rpx 0;
+}
+
+.vp .vpIndex {
+    font-weight: bold;
+}
+
+.item {
+   word-break: break-all; 
+   padding: 0rpx 0rpx 0rpx 40rpx;
+}
+
+.blockContent{
+    padding-bottom: 130rpx;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30rpx;
+    margin: 0 40rpx;
+    border-bottom: 1px #e3e3e3 solid;
+    padding: 30rpx 0;
+}
+
+.block .blockIndex{
+    font-weight: bold;
+}
+
+.block .arrow{
+    /*color: #e4e4e4;
+    font-weight: bold;
+    font-size: 55rpx;*/
+    display: inline-block;
+    width: 34rpx;
+    height: 40rpx;
+}
+
+.blockitem {
+   word-break: break-all; 
+   padding-left: 40rpx;
+   padding-right: 40rpx;
+}
+
+/*底部导航*/
+.peerTabbar{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-top: 1px #e3e3e3 solid;
+}
+
+.peerTabbar .nav{
+    width: 50%;
+    padding: 20rpx 32rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+.peerTabbar .nav .navImg{
+    width: 80rpx;
+    height: 80rpx;
+}

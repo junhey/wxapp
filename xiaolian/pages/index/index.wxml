@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="balance">
+      <text class="bae">{{balance}} BAE</text>
+      <image src="../../image/block.png" class="block" bindtap="bindBlockTap"></image>
+    </view>
+   </view> 
+   <text class="title"></text>
+   <view class="card">
+      <view class="cardinfo">
+        <text>智能合约 - 便利店服务</text>
+        <text class="asset">{{score}} S / {{scoreB}} BAE</text>
+      </view>
+      <image src="{{integralQRCode}}" class="chaincode" bindtap="bindPreviewTap"></image>
+   </view>
+   <text class="title"></text>
+   <view class="card">
+      <view class="cardinfo">
+        <text>智能合约 - 微研报服务</text>
+        <text class="asset">{{patent}} S / {{patentB}} BAE</text>
+      </view>
+      <image src="{{patentQRCode}}" class="chaincode" bindtap="bindPatentTap"></image>
+   </view>   
+   <button class="qrcode" bindtap="bindScanTap">扫码</button>
+</view>

@@ -1,0 +1,48 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 40rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid green;
+}
+
+input {
+  margin-left: 50rpx;
+  width: 300rpx;
+}
+
+.passCode {
+  position: relative;
+}
+
+.code {
+  width: 140rpx;
+  font-size: 35rpx;
+  color: lightgray;
+  position: absolute;
+  right: 0;
+}
+
+button {
+  width: 80%;
+  margin-top: 80rpx;
+  background-color: forestgreen;
+}
+
+label {
+  width: 160rpx;
+}
+
+.tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 40rpx;
+  font-size: 35rpx;
+  color: red;
+}

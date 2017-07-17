@@ -1,0 +1,19 @@
+
+.resultShowContent{
+    background-color: white;
+    /*border-bottom: 1px #dddddd solid;*/
+}
+
+.resultShowContent .resultItem{
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*完成按钮*/
+.successBtn{    
+    width: 80%;
+    margin-top: 18px;
+    background-color: white;
+    border: 1px forestgreen solid;
+}

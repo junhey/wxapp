@@ -1,0 +1,31 @@
+<!--积分结果页面-->
+
+<view class="container">
+    <view class="resultShowContent">
+        <!--结果状态的图标-->
+        <view class="resultItem">
+            <block>
+                <icon type="success" size="70"/>
+            </block>
+        </view>
+        <!--<view class="resultItem">
+            <image src="{{integralQRCode}}"></image>
+        </view>-->
+        
+        <!--结果状态文字-->
+        <view class="resultItem">
+            <text>交易成功</text>
+        </view>
+        
+        <!--积分-->
+        <view class="resultItem">
+            <!--<text>BAE</text>-->
+            <text>{{scoreResult}} S</text>
+        </view>
+    </view>
+    <!--<button class="successBtn" type="primary" bindtap="bindHmeViewTap">完成</button>-->
+    <button bindtap="bindHomeViewTap" class="successBtn" type="primary" plain>完成</button>
+
+    <!--loading-->
+   <loading hidden="{{hiddenLoading}}">正在加载</loading> 
+</view>

@@ -1,0 +1,43 @@
+<view class="container">
+    <view class="title">
+       <text>区块 {{index}}</text>
+    </view>   
+    <view class="info">
+       <text class="itemname">PHash</text>
+       <text class="item">{{block.previousBlockHash}}</text>
+    </view> 
+    <view class="line"></view> 
+    <view class="info">
+       <text class="itemname">Date</text>
+       <text class="item">{{date}}</text>
+    </view>      
+    <view class="info">
+       <text class="itemname">Contra</text>
+       <text class="item">{{block.transactions[0].chaincodeID}}</text>
+    </view>   
+    <view class="info">
+       <text class="itemname">TransId</text>
+       <text class="item">{{block.transactions[0].txid}}</text>
+    </view>   
+    <view class="info">
+       <text class="itemname">Nonce</text>
+       <text class="item">{{block.transactions[0].nonce}}</text>
+    </view>                   
+    <view class="info">
+       <text class="itemname">Txinfo</text>
+       <text class="item">{{block.transactions[0].payload}}</text>
+    </view>   
+    <!--<view class="line"></view>     -->
+    <!--<view class="info">
+       <text class="itemname">Cert*</text>
+       <text class="item">{{block.transactions[0].cert}}</text>
+    </view> -->
+    <view class="info">
+       <text class="itemname">Sign*</text>
+       <text class="item">{{block.transactions[0].signature}}</text>
+    </view>         
+    <view class="line"></view>    
+
+     <!--loading-->
+   <loading hidden="{{hiddenLoading}}">正在加载</loading> 
+</view>
