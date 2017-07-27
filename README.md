@@ -86,6 +86,7 @@ Page({
 
 - 好友坑过的[开发者社区已解决问题](https://developers.weixin.qq.com/home?tab=1&labels=&lang=zh_CN&token=)
 
+- 小程序出问题的终极解决办法[腾讯客服-小程序](http://kf.qq.com/product/wx_xcx.html)
 
 1. 小程序页面空白
     - css兼容性问webkit内核
@@ -196,6 +197,11 @@ https://github.com/ghostjzf/xiaolian
 https://github.com/FatDong1/time-record
 
 ### 更多
+
+2017-07-27更新
+小程序的文档在不断的变化，我也会时常更新
+发现一个小程序出问题的终极解决办法[腾讯客服-小程序](http://kf.qq.com/product/wx_xcx.html)
+
 
 持续踩坑中...
 
