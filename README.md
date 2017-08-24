@@ -163,6 +163,9 @@ https://github.com/junhey/wxapp-cnode
 - 石头剪刀布★★★★  腾讯云团队出品，里面有websocket的使用
 https://github.com/CFETeam/weapp-demo-websocket
 
+- 五洲到家★★★★  比较完整的一个小程序实战
+https://github.com/xiaobinwu/dj
+
 - v2ex ★★★
 https://github.com/liuyugang123/V2EX
 
